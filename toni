@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .productos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .producto {
+            background: white;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .producto img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Tienda Online</h1>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Productos -->
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="producto1.jpg" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>Precio: $10.00</p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="producto2.jpg" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p>Precio: $20.00</p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="producto3.jpg" alt="Producto 3">
+                <h3>Producto 3</h3>
+                <p>Precio: $15.00</p>
+                <button>Añadir al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <textarea placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Tienda Online. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
